@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Interview Coach - Practice. Improve. Get Hired.</title>
+    <meta name="description" content="Prepare for your dream job with AI-powered mock interviews, personalized feedback, resume analysis, and performance insights." />
+    <meta property="og:title" content="AI Interview Coach - Practice. Improve. Get Hired." />
+    <meta property="og:description" content="Prepare for your dream job with AI-powered mock interviews, personalized feedback, resume analysis, and performance insights." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Gracefully handle and suppress harmless Vite HMR WebSocket connection errors in iframe
+      window.addEventListener('error', function(event) {
+        if (event && (
+          event.message?.includes('WebSocket') ||
+          event.message?.includes('createWebSocketModuleRunnerTransport') ||
+          event.filename?.includes('@vite/client')
+        )) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+          return true;
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(event) {
+        const msg = event?.reason?.message || '';
+        const stack = event?.reason?.stack || '';
+        if (msg.includes('WebSocket') || stack.includes('@vite/client') || stack.includes('createWebSocketModuleRunnerTransport')) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      }, true);
+    </script>
+  </head>
+  <body class="bg-[#F7F8FC] text-[#10152B] antialiased selection:bg-[#7657F6]/20 selection:text-[#7657F6]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
